@@ -50,3 +50,7 @@ Gingerbreadman metodu, basit bir matematiksel formüle sahip olmasına rağmen, 
 
 Gingerbreadman metodu hassas başlangıç koşullarına sahip olduğunu ve belirli desenlerin nasıl oluştuğunu göstermektedir. Bu analizler, metodun karmaşıklık teorisi ve kaotik sistemlerin incelenmesinde önemli bir araç olduğunu göstermektedir. Sonuç olarak, Gingerbreadman metodu karmaşıklık teorisi ve kaotik sistemlerin incelenmesinde önemli bir modeldir. Bu çalışma, metodun kaotik doğasını anlamamıza ve karmaşıklık teorisine yeni perspektifler kazandırmamıza yardımcı olabilir.
 
+
+### Referanslar
+1. https://mathworld.wolfram.com/GingerbreadmanMap.html
+2. https://en.wikipedia.org/wiki/Gingerbreadman_map
