@@ -4,9 +4,9 @@
 ### Giriş
 Gingerbreadman metodu, karmaşıklık teorisinde ve dinamik sistemlerde kullanılan bir matematiksel modeldir. Basit matematiksel denklemlerle tanımlanan bu metod, kaotik davranışları gösteren bir sistem olarak kabul edilir.
 
-Bu metod genellikle şu denklemlerle ifade edilir:
-  Xn+1 = 1 - Yn - |Xn|
-  Yn+1 = Xn
+Bu metod genellikle şu denklemlerle ifade edilir:  
+    <p> Xn+1 = 1 - Yn - |Xn| </p>
+    <p> Yn+1 = Xn </p>  
 Bu denklemlerde xn ve yn haritanın bir noktasının koordinatlarını temsil ederken, xn+1 ve yn+1 ise bir sonraki iterasyonda bu noktanın koordinatlarını belirler.
 
 Gingerbreadman metodu, bir çift sayıdan oluşan bir koordinat sistemine sahip olan ve her bir adımda bu koordinatların nasıl değiştiğini gösteren bir grafik olarak düşünülebilir. Bu metod, bir noktanın koordinatlarını aldığında, bu noktanın bir sonraki adımda nasıl bir konumda olacağını belirlemek için kullanılır.
