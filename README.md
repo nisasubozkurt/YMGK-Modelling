@@ -39,7 +39,7 @@ Gingerbreadman metodunun dinamik özellikleri, aşağıdaki gibidir:
 
 
 ### Gingerbreadman Metodunun Uygulamaları
--	Kriptografi: Karmaşık ve kaotik davranışı nedeniyle, Zencefil Adam Haritası, kriptografik sistemlerde veri şifrelemek için kullanılabilir.
+-	Kriptografi: Karmaşık ve kaotik davranışı nedeniyle,Gingerbreadman haritası, kriptografik sistemlerde veri şifrelemek için kullanılabilir.
 -	Bilgisayar grafikleri: Haritanın kaotik davranışı, bilgisayar grafiklerinde rastgele desenler ve dokular oluşturmak için kullanılabilir.
 -	Robotik: Haritanın kaotik davranışı, robotların karmaşık ortamlarda gezinmesini planlamak için kullanılabilir.
 -	Ekonomi: Haritanın kaotik davranışı, finansal piyasaların davranışını modellemek için kullanılabilir.
