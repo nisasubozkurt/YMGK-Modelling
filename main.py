@@ -1,30 +1,42 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.integrate import odeint
 
-# Get model parameters from user
-alpha = float(input("Enter alpha parameter: "))
+def lotka_volterra(alpha, beta, gamma, delta, prey_initial, predator_initial):
+    # Zaman noktaları
+    t = np.linspace(0, 100, 1000)
 
-# Initial condition
-theta_initial = float(input("Enter initial angle (in radians): "))
+    # Başlangıç koşulları
+    y0 = [prey_initial, predator_initial]
 
-# Time points
-timesteps = int(input("Enter number of timesteps: "))
+    # Lotka-Volterra diferansiyel denklemleri
+    def model(y, t):
+        prey, predator = y
+        dydt = [alpha * prey - beta * prey * predator,
+                gamma * prey * predator - delta * predator]
+        return dydt
 
-# Circle map function
-def circle_map(theta, alpha):
-    return theta + alpha - 2 * np.pi * np.floor((theta + alpha) / (2 * np.pi))
+    # Diferansiyel denklemleri çöz
+    sol = odeint(model, y0, t)
 
-# Iterate the circle map
-theta_values = [theta_initial]
-for _ in range(timesteps):
-    next_theta = circle_map(theta_values[-1], alpha)
-    theta_values.append(next_theta)
+    # Grafik
+    plt.figure(figsize=(10, 6))
+    plt.plot(t, sol[:, 0], label='Av Popülasyonu')
+    plt.plot(t, sol[:, 1], label='Yırtıcı Popülasyonu')
+    plt.xlabel('Zaman')
+    plt.ylabel('Popülasyon')
+    plt.title('Lotka-Volterra Modeli: Yırtıcı ve Av Popülasyonları')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
 
-# Plot
-plt.figure(figsize=(8, 6))
-plt.plot(theta_values[:-1], theta_values[1:], '.', markersize=1)
-plt.xlabel('θ(t)')
-plt.ylabel('θ(t+1)')
-plt.title('Circle Map: Phase Portrait')
-plt.grid(True)
-plt.show()
+# Kullanıcıdan parametreleri al
+alpha = float(input("Av büyüme hızını girin (alpha): "))
+beta = float(input("Yırtıcı oranını girin (beta): "))
+gamma = float(input("Yırtıcı büyüme hızını girin (gamma): "))
+delta = float(input("Yırtıcı ölüm hızını girin (delta): "))
+prey_initial = float(input("Başlangıç av popülasyonunu girin: "))
+predator_initial = float(input("Başlangıç yırtıcı popülasyonunu girin: "))
+
+# Fonksiyonu çağır
+lotka_volterra(alpha, beta, gamma, delta, prey_initial, predator_initial)

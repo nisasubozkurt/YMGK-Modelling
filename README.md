@@ -1,2 +1,3 @@
 # YMGK-Modelling
-Yazılım Mühendisliği Gündüz A grubu Modelleme çalışması
+## Lotka-Voltera 
+Lotka-Voltera için istenilen analiz yapıldı. Ardından tek bir fonksiyon içerisinden alınmak istenen çıktı için gerekli düzenlemeler yapıldı. 
