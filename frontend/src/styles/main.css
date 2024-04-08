@@ -1,0 +1,54 @@
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.inputs input{
+    width: 16rem;
+    margin-top: 5px;
+    height: 1.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+.btn {
+    width: 16rem;
+    padding: 1rem;
+    margin-left: 2px;
+    background-color: transparent;
+    border: 1px solid #a5a5a5;
+    margin-top: 8px;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 0 0 0 5px gray;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(1.05); 
+    opacity: 0.8; 
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 32rem;
+    border: 1px solid #a5a5a5;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.sidebar h4{
+    cursor: pointer;
+    color: #636363;
+    font-size: large;
+}
+
+.sidebar h4.selected {
+    color: green;
+  }
