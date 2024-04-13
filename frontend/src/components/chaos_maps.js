@@ -41,6 +41,27 @@ const chaos_maps = [
             "d",
             "iterations"
         ]
+    },
+    {
+        id:"generate_and_save_lorenz96_map",
+        name:"Lorenz96 Map",
+        description:"",
+        inputs: [
+            "N ",
+            "F",
+            "dt",
+            "num_steps"
+        ]
+    },
+    {
+        id:"generate_and_save_logistic_map",
+        name:"Logistic Map",
+        description:"Logistic haritası, bir populasyonun zaman içindeki değişimini modellemek için kullanılan bir matematiksel modeldir. İlk olarak 1976'da Robert May tarafından tanıtılmıştır. Bu model, belirli bir populasyonun gelecekteki durumunu tahmin etmek için kullanılırken, kaotik davranışları da gösterebilir.",
+        inputs: [
+            "r",
+            "x0",
+            "iterations"
+        ]
     }
 ]
 
