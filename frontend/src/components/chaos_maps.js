@@ -62,6 +62,15 @@ const chaos_maps = [
             "x0",
             "iterations"
         ]
+    },
+    {
+        id: "generate_and_save_henon_map",
+        name: "Henon Map",
+        description: "Henon haritası, dinamik sistemlerin ve kaotik davranışın matematiksel modellenmesinde kullanılan bir sistemdir. Çift haneleli bir denkleme dayanır ve karelerin geri dönüşümü ile tanımlanır.",
+        inputs: [
+            "a",
+            "b"
+        ]
     }
 ]
 
