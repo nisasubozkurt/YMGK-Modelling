@@ -4,7 +4,6 @@ import ChaosMap from "./components/ChaosMap";
 
 function App() {
   const [selectedChaosMap, setSelectedChaosMap] = useState("");
-  console.log(selectedChaosMap);
   return (
     <>
       <div style={{marginTop:'2rem',display:'flex', justifyContent:'center', alignItems:'center'}}>
