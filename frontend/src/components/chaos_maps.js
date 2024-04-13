@@ -71,6 +71,18 @@ const chaos_maps = [
             "a",
             "b"
         ]
+    },
+    {
+        id: "generate_and_save_butterfly_map",
+        name: "Butterfly Map",
+        description: "Kelebek haritası, kaos teorisinde ve dinamik sistemlerin modellenmesinde kullanılan bir modeldir. Doğal süreçlerin matematiksel modellemesi için kullanışlıdır ve kelebek etkisi olarak adlandırılan bir olguyla ilişkilidir.",
+        inputs: [
+            "x",
+            "y",
+            "a",
+            "b",
+            "iterations"
+        ]
     }
 ]
 
