@@ -83,6 +83,29 @@ const chaos_maps = [
             "b",
             "iterations"
         ]
+    },
+    {
+        id:"generate_and_save_gauss_map",
+        name:"Gauss Map",
+        description:"Gauss haritası, matematikte bir yüzeyin her noktasına bir birim normal vektörü atayan bir fonksiyondur. Bu normal vektör, o noktada yüzeyin eğimine ve yönelimine ilişkin bilgi taşır. Gauss haritası, genellikle diferansiyel geometri ve topoloji gibi alanlarda kullanılır.",
+        inputs: [
+            "r",
+            "x0",
+            "iterations"
+        ]
+    },
+    {
+        id:"generate_and_save_lotka_volterra_map",
+        name:"Lotka Volterra Map",
+        description:"Lotka-Volterra Haritası, biyolojide popülasyon dinamiklerini modellemek için kullanılan bir matematiksel araçtır. Bu harita, bir yırtıcı ve bir av türünün etkileşimini tanımlar. Yırtıcı ve av popülasyonlarının her birinin büyüme oranları ve birbirlerine olan etkileşimleri, bu harita üzerindeki noktaların konumlarına bağlı olarak belirlenir.",
+        inputs: [
+            "alpha",
+            "beta",
+            "gamma",
+            "delta",
+            "prey_initial",
+            "predator_initial"
+        ]
     }
 ]
 
