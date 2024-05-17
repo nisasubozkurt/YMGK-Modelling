@@ -1,4 +1,20 @@
+body {
+    background-image: url('https://st4.depositphotos.com/14373490/29844/i/450/depositphotos_298440424-stock-photo-graph-paper-is-used-for.jpg');
+    background-repeat: repeat; /* Arka plan resminin tekrar etmesini engeller */
+    background-position: center center; /* Arka plan resmini ortalar */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
+
+:root{
+    --priamry-color:rgb(240, 170, 74);
+    --secondary-color:rgb(230, 207, 174);
+    --smooth-color: rgb(240,210, 180);
+    --logo-color: rgb(211,197, 184);
+
+}
 .inputs{
     display: flex;
     flex-direction: column;
@@ -18,7 +34,7 @@
     width: 16rem;
     padding: 1rem;
     margin-left: 2px;
-    background-color: transparent;
+    background-color: var(--smooth-color);
     border: 1px solid #a5a5a5;
     margin-top: 8px;
     border-radius: 1rem;
@@ -31,7 +47,8 @@
 .btn:hover {
     transform: scale(1.05); 
     opacity: 0.8; 
-    transition: transform 0.2s, opacity 0.2s;
+    background-color: var(--priamry-color);
+    transition: transform 0.5s, opacity 0.4s;
 }
 
 
@@ -45,10 +62,84 @@
 
 .sidebar h4{
     cursor: pointer;
-    color: #636363;
+    color: var(--priamry-color);
     font-size: large;
 }
+
+.map-item h1{
+    color: var(--priamry-color);
+    display: inline;
+}
+
+.navbar-header {
+    justify-content:'center';
+    display: flex;
+    align-items: center;
+}
+.navbar-header h1{
+    margin-top: 1rem;
+    text-align: center;
+}
+.logo {
+    width: 50px;
+    height: auto; 
+    margin-right: 15px; 
+  }
 
 .sidebar h4.selected {
     color: green;
   }
+
+.navbar-items{
+    padding: 10;
+    margin: 10;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-items li {
+    display: inline-block;
+    margin-right: 10px; 
+  }
+
+.navbar{
+    background-color:var(--logo-color);
+    border-radius: 15px;
+    border: 2px solid var(--priamry-color);
+    margin: 1rem;
+}
+
+.navbar-item{
+    cursor: pointer;
+}
+.navbar-item:hover{
+    transform: scale(1.05); 
+    opacity: 0.8; 
+    color: var(--priamry-color);
+    transition: transform 0.5s, opacity 0.4s;
+}
+
+.main-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+.footer {
+    background-color: var(--logo-color);
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    padding: 10px 0;
+    border-top: 1px solid #575757;
+    font-size: 14px;
+  }
+  
+  
+

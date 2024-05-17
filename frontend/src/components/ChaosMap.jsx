@@ -39,7 +39,7 @@ const ChaosMap = ({ chaosMap }) => {
   }
 
   return (
-    <div>
+    <div className="map-item">
       <h1>{chaosMap.name}</h1>
       <p style={{ maxWidth: "40rem", textAlign: "justify" }}>
         {" "}
