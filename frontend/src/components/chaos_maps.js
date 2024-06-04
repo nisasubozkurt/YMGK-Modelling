@@ -39,6 +39,8 @@ const chaos_maps = [
             "b",
             "c",
             "d",
+            "width",
+            "height",
             "iterations"
         ]
     },
@@ -105,6 +107,16 @@ const chaos_maps = [
             "delta",
             "prey_initial",
             "predator_initial"
+        ]
+    },
+    {
+        id:"generate_and_save_complex_squaring_map",
+        name:"Complex Squaring Map",
+        description:"Complex-Squaring Haritası, matematikte ikinci dereceden bir polinom haritalaması olan karmaşık kare alma haritası, dinamik sistemlerdeki kaosun basit ve erişilebilir bir gösterimidir.",
+        inputs: [
+            "real_range",
+            "image_range",
+            "num_points"
         ]
     }
 ]
